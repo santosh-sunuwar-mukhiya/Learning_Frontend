@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+
+.card{
+    border: 2px solid skyblue;
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    margin: 30px auto;
+}
