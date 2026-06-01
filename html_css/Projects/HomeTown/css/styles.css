@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-img{
+   background-image: url("../images/ilam.jpg"); 
+   background-size: cover;
+}
