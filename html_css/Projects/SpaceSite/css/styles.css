@@ -44,3 +44,23 @@ h1{
     font-weight: 400;
     margin: 30px 25px;
 }
+
+.item{
+    position: relative;
+}
+
+.item-img{
+    display: block;
+    width: 100%;
+}
+
+.img-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+    font-family: inherit;
+}
+
