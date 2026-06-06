@@ -1,6 +1,93 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
 }
 
+header{
+    width: 100%;
+}
+
+ul{
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+h1, h2, h3, footer{
+    font-family: "Architects Daughter", cursive;
+    text-align: center;
+}
+
+h1{
+    letter-spacing: 0.2cm;
+    margin-bottom: 5px;
+}
+
+#hero{
+    text-align: center;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.caption{
+    color: lightblue;
+}
+
+#details{
+    display: flex;
+    margin: 20px 20px;
+    width: 100%;
+}
+
+#projects{
+    width: 20%;
+    padding: 20px;
+}
+
+#projects p, ol{
+    margin-left: 10px;
+}
+
+#projects li{
+    padding: 10px;
+}
+
+#work{
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
+#education{
+    padding: 20px;
+}
+
+#review{
+    margin: 25px;
+    padding: 20px;
+}
+
+#container{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+#container .card{
+    padding: 20px;
+    width: 200px;
+    margin-top: 20px;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+}
+
+footer{
+    padding: 10px;
+}
