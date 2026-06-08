@@ -1,0 +1,200 @@
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;  /* Root font size */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #E5DEFF;
+    color: #333;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 .highlight {
+    color: #6E44FF;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6E44FF;
+}
+
+p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ============================================
+   CONTAINER & LAYOUT
+   ============================================ */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: clamp(280px, 90vw, 480px);  /* Fluid mobile-first */
+    padding: 1.5rem 0;
+    min-height: 100vh;  /* ✅ Use min-height, not height */
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* ============================================
+   CARD COMPONENT
+   ============================================ */
+.card {
+    width: 100%;
+    border-radius: 8px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;  /* ✅ Auto, not fixed */
+    display: block;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 1.25rem;
+}
+
+.card__timestamp {
+    font-size: 0.75rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+}
+
+.card__title {
+    margin-bottom: 1rem;
+}
+
+.card__subtitle {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 1rem;
+    padding: 0;  /* Override p padding */
+}
+
+.card__description {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem 1.25rem;
+    border-top: 1px solid #eee;
+}
+
+.card__link {
+    color: #6E44FF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.card__link:hover {
+    color: #5030b8;
+}
+
+.card__actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* TABLET (768px+) */
+@media (min-width: 48rem) {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: clamp(600px, 85vw, 900px);
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .card {
+        flex: 1;
+        max-width: 350px;
+    }
+
+    .card__content {
+        padding: 1.5rem;
+    }
+
+    .card__footer {
+        padding: 0 1.5rem 1.5rem;
+    }
+}
+
+/* DESKTOP (1024px+) */
+@media (min-width: 64rem) {
+    .container {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+}
