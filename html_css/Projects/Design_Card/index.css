@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 500px; /* 820px full screen*/
+    margin: auto;
+    padding: 1.2em 0;
+    height: 100vh;
+    background-color: #E5DEFF;
+}
+
+/* Typography */
+h1{
+    text-align: center;
+    font-size: 1.25em;
+}
+
+h2{
+    font-size: 1rem;
+    color: #6E44FF;
+}
+
+p{
+    font-size: 0.60em;
+    line-height: 1.5;
+}
+
+.intro{
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.sub-heading{
+    font-weight: 400;   
+    font-size: 0.75rem;
+}
+
+.sub-heading, h2, p{
+    padding-left: 1.25em;
+}
+
+.watch-intro{
+    padding-left: 2em;
+}
+
+/* images  */
+
+.watch-img{
+    width: 100%;
+}
+
+.coffee-img{
+    width: 100%;
+}
+
+/* Links */
+
+.link{
+    font-weight: 400;
+    color: #6E44FF;
+    font-size: 0.87rem;
+    text-decoration: none;
+    padding-left: 0.5em;
+}
+
+/* card layout */
+.card{
+    margin: 0 auto;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    outline: transparent;
+}
+
+.box{
+    width: 60%;
+    height: 414px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5em;
+}
+
+#footer{
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+/* Media Quieries */
+
+@media(min-width: 768px){
+    .container{
+        max-width: 700px;
+        height: 100vh;
+    }
+
+    .card{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .box{
+     height: 50vh;
+    }
+
+    .intro{
+        line-height: 2;
+    }
+
+    h1{
+        font-size: 2.25rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .sub-title{
+        padding: 0.5em 2.75em;
+    }
+
+    .watch-intro{
+    padding-left: 2em;
+}
+
+}
