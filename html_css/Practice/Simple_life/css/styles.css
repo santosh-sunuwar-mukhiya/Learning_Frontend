@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FFFFFF;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+}
+
+/* Typography */
+h1,
+.subtitle{
+    text-align: center;
+}
+
+h1{
+    font-family: "Lora", serif;
+    font-weight: 300;
+    font-size: 2.063rem;
+    color: #143774;
+    margin: 0;
+}
+
+.subtitle{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 0.75rem;
+    color: #1792D2;
+    letter-spacing: 0.15em;
+}
+
+/* Layouts */
+/* Navigation */
+header{
+    background-color: #F8F8F8;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+nav ul{
+    padding: 1em 0;
+    list-style-type: none;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+nav a{
+    text-decoration: none;
+    color: #717171;
+    font-size:1rem;
+}
+
+/* Layouts */
+.container{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}

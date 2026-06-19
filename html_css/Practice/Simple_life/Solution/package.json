@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s017inc",
+  "description": "https://scrimba.com/learn-responsive-web-design-c029/~01t",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
