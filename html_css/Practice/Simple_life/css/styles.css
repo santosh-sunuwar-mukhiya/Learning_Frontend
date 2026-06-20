@@ -1,7 +1,309 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 body{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-family: "Ubuntu", sans-serif;
     margin: 0;
 }
+
+
+/* Typography */
+h1, 
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h3 {
+    color: #1792d2;
+}
+
+a {
+    color: #1792d2;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.subtitle{
+    margin: 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    color: #1792D2;
+}
+
+.title {
+    font-size:1.5rem;
+}
+
+.read-more,
+.info {
+    font-size: .875rem;
+}
+
+.read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.read-more:hover,
+.read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+
+.widget-title,
+.post-title {
+    font-size: 1rem;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.post-title {
+    color: #143774;
+}
+
+.about-me-title {
+    display: none;
+}
+
+/* Images */
+img{
+    width: 100%;
+    display:block;
+}
+
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+.widget-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Layouts */
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+    /* border: 1px solid black; */
+}
+
+.container-flex{
+    display:flex;
+    flex-direction: column;
+}
+
+@media (min-width:675px) {
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+
+    .container-flex {
+        flex-direction: row;
+    }
+}
+
+/* navigation */
+
+.nav-bar, nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    padding: 2em 0;
+    margin-bottom: 3em;
+    /* border: 1px solid yellow; */
+    width: 100%;
+    background: #f8f8f8;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 1em;
+    /* border: 1px solid red; */
+}
+
+nav li{
+    margin: .5em 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #707070;
+    letter-spacing: 3.2px;
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+nav a:hover, nav a:focus{
+    color: #1792D2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (min-width: 675px) {
+    .nav-bar, nav ul {
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    nav li {
+        margin-left: 2em;
+    }
+
+}
+
+/* Article */
+/* Featured Article */
+.featured-article {
+    display: flex;
+    flex-direction: column;
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-primary {
+    order: 1;
+}
+
+.article-secondary {
+    order: 0;
+}
+
+/* Recent articles */
+.recent-article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "imag imag"
+    "titl date"
+    "info info"
+    "link ....";
+}
+
+.article-img {
+    grid-area: imag;
+}
+
+.title {
+    grid-area: titl;
+}
+
+.date { grid-area: date; justify-self: end; margin-left: .5em;}
+.info { grid-area: info;}
+.read-more { grid-area: link;}
+
+@media (min-width: 675px){
+    .recent-article {
+        grid-template-columns: 1fr 2fr;
+        gap: 0 1em;
+        grid-template-areas: 
+        "imag titl"
+        "imag info"
+        "imag link"
+        "date ....";
+    }
+
+
+    .info{
+        /* border: 1px solid yellow; */
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .article-img {
+        order: -2;
+        /* border: 1px solid blue; */
+        min-height: 250px;
+        object-fit: cover;
+        /* object-position: left; */
+    }
+}
+
+/* Asides */
+
+aside {
+    border: 20px solid #ebebeb;
+    opacity: 1;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-image {
+    order: -1;
+}
+
+/* footer */
+footer {
+    background-color: #143774;
+    text-align: center;
+    color: #ffffff;
+    padding: 1em 0;
+}
+
+footer p:last-child {
+    font-weight: 300;
+}
+
