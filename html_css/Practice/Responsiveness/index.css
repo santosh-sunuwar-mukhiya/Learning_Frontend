@@ -1,0 +1,17 @@
+/* 1. Variables (tokens) */
+:root {
+  --primary: #2563eb;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+}
+
+/* 2. Base/Reset */
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+
+/* 3. Components (BEM naming)
+.button { ... }
+.button--primary { ... }
+
+/* 4. Mobile-first media queries */
+/* @media (min-width: 768px) { ... }  */

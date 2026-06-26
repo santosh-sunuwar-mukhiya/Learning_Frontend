@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* Typography */
+strong{
+    font-weight: 900;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -24,11 +29,6 @@
     justify-content: center;
 }
 
-.span{
-    width: 5px;
-    height: 5px;
-    background-color: white;
-}
 
 .form{
     text-align: center;
