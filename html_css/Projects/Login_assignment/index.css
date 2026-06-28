@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Images */
+img {
+    width:100%;
+}
+
+.container {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro{
+    width: 45%;
+    border: 1px solid red;
+}
+
+.img{
+    width: 45%;
+}
+
