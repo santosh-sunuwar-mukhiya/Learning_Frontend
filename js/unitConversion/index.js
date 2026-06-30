@@ -2,7 +2,9 @@
 let userInput = 0;
 const btnEl = document.getElementById("btn")
 const inputEl = document.getElementById("input")
-const valueEl = document.getElementById("length-value")
+const lengthEl = document.getElementById("length-value")
+const volumeEl = document.getElementById("volume-value")
+const massEl = document.getElementById("mass-value")
 
 btnEl.addEventListener("click", function(){
     userInput = Number(inputEl.value).toFixed(3)
@@ -15,15 +17,17 @@ function render(num)
     let feet = (num * 3.28084).toFixed(3);
     // Feet to Meters
     let meters = (num * 0.3048).toFixed(3);
-    valueEl.innerText = `${num} meters = ${feet} feet | ${num} feet = ${meters} meters `
+    lengthEl.innerText = `${num} meters = ${feet} feet | ${num} feet = ${meters} meters `
+
     // Liters to Gallons (US)
-    let gallons = num * 0.264172;
+    let gallons = (num * 0.264172).toFixed(3);
     // Gallons to Liters
-    let liters = num * 3.78541
-    valueEl.innerText = `${num} meters = ${feet} feet | ${num} feet = ${meters} meters `
-    // // Kilograms to Pounds
-    // let pounds = num * 2.20462
-    // // Pounds to Kilograms
-    // let kilograms = num * 0.453592
-    valueEl.innerText = `${num} meters = ${feet} feet | ${num} feet = ${meters} meters `
+    let liters = (num * 3.78541).toFixed(3);
+    volumeEl.innerText = `${num} liters = ${gallons} gallons | ${num} gallons = ${liters} liters `
+
+    // Kilograms to Pounds
+    let pounds = (num * 2.20462).toFixed(3);
+    // Pounds to Kilograms
+    let kilograms = (num * 0.453592).toFixed(3);
+    massEl.innerText = `${num} kilograms = ${pounds} pounds | ${num} pounds = ${kilograms} kilograms `
 }
