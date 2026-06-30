@@ -26,6 +26,9 @@ h2 {
 #volume-value, 
 #mass-value {
     color: #000;
+    /* border: 1px solid black; */
+    padding: .5em 2em;
+    min-height: 25px;
 }
 
 /* Layout */
@@ -83,8 +86,8 @@ main {
 }
 
 .card {
-    width: 90%;
-    padding: .5em 0;
+    width: 100%;
+    padding: .5em 1em;
     /* border: 1px solid yellow; */
     margin: .5em auto .75em;
     background-color: #ffffff;
