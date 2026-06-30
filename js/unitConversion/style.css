@@ -2,4 +2,90 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: 1px solid black; */
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    padding-top: 4em;
+}
+
+/* Typography */
+h2 {
+    text-align: center;
+    margin: .5em 0;
+}
+
+#units{
+    margin-bottom: .5em;
+    /* border: 1px solid blue; */
+    color: #5A537B;
+    font-weight: 600;
+}
+#length-value,
+#volume-value, 
+#mass-value {
+    color: #000;
+}
+
+/* Layout */
+.container{
+    /* padding: 5em; */
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    width: 60%;
+    max-width: 500px;
+}
+
+header {
+    color: white;
+    border: 1px solid yellow;
+    width: 100%;
+    padding: 1em;
+    background-color: #6943FF;
+}
+
+input{
+    color: #fff;
+    background-color: #B295FF;
+}
+
+#input {
+    text-align: center;
+    display: block;
+    margin: 0 auto .5em;
+    color: #fff;
+    padding: .5em 0;
+    width: 90px;
+    border:none;
+    outline: turquoise;
+    border-radius: 5px;
+    font-size: clamp(1rem, 2vw, 3rem);
+    font-weight: bolder;
+}
+
+#btn {
+    display: block;
+    margin: 0 auto .5em;
+    border: none;
+    outline: turquoise;
+    padding: .5em 1em;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+main {
+    text-align: center;
+    color: #5A537B;
+    /* border: 1px solid blue; */
+    background-color: #f4f4f4;
+    padding: 1em;
+}
+
+.card {
+    width: 90%;
+    padding: .5em 0;
+    /* border: 1px solid yellow; */
+    margin: .5em auto .75em;
+    background-color: #ffffff;
 }

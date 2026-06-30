@@ -7,7 +7,7 @@ const volumeEl = document.getElementById("volume-value")
 const massEl = document.getElementById("mass-value")
 
 btnEl.addEventListener("click", function(){
-    userInput = Number(inputEl.value).toFixed(3)
+    userInput = Number(inputEl.value)
     render(userInput)
 })
 
