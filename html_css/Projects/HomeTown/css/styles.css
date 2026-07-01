@@ -6,6 +6,49 @@
 
 body{
     padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+}
+
+/* Typography */
+.blog-title {
+    text-align: center;
+}
+
+.header .title{
+    font-size: clamp(1rem, 5vw, 3rem);
+    background-color: #1D3557;
+    margin-bottom: .25em;
+    padding: .25em 0;
+    border-radius: 15px;
+}
+
+.header .subtitle{
+    background-color: #457B9D;
+     padding: .25em 0.5em;
+     border-radius: 15px;
+     font-weight: 700;
+     font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.blogs .blog-title{
+    margin-bottom: .5em;
+    color: #1D3557;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.blog .blog-topic{
+    font-weight: 700;
+    font-size: clamp(.5rem, 2vw, 1rem);
+    margin: 0 0 1em;
+    color: #1D3557;
+}
+
+.info{
+    font-size: clamp(.25rem, 2vw, 1rem);
+    font-weight: 400;
+    color: #1D3557;
 }
 
 /* Images */
@@ -14,15 +57,110 @@ img{
     object-fit: cover;
 }
 
+.blog-img {
+    display: block;
+    max-width: 75px;
+    border-radius: 100%;
+    margin: 0 auto 1em;
+}
+
+.profile{
+    max-width: 120px;
+    width: 45%;
+}
+
 /* Layout */
 .container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .card{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
+    width: 100%;
+}
+
+.hero{
+    background-image: url("../images/main.jpg");
+    background-size: cover;
+    object-fit: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header{
+    color: white;
     width: 50%;
+}
+
+
+/* Blog Layout */
+.blogs{
+    min-height: 40vh;
+    background-color: #F1FAEE;
+    padding: 1em 2em;
+}
+.blog{
+    width: 100%;
+    /* min-height: auto; */
+    padding: 2em 1em;
+    /* border: 1px solid black; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.blog-1, .blog-2, .blog-3{
+    /* border: 1px solid yellow; */
+    width: 30%;
+    padding: .5em;
+    min-height: 33vh;
+}
+
+/* About me */
+.contact{
+    background-color: #FFFFFF;
+    padding: 2em 0;
+}
+
+.aboutme{
+    margin: 0 auto;
+    width: 53%;
+    background-color: #A8DADC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    border-radius: 5px;
+    border-bottom: 3px solid #1D3557;
+}
+
+.details{
+    width: 47%;
+}
+
+.details h3{
+    margin-bottom: .5em;
+    color: #1D3557;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.bio{
+    font-size: clamp(.75rem, 1vw, 1rem);
+    margin-bottom: .5em;
+    color: #1D3557;
+    font-style: italic;
+}
+
+.name{
+    font-weight: 700;
+    color: #1D3557;
+    font-size: clamp(.75rem, 1vw, 1rem);
 }
