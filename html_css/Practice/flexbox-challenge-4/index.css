@@ -1,0 +1,93 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 1em 0;
+}
+
+/* Typography */
+h1{
+    color: #824936;
+    font-size: clamp(1rem, 5vw, 4rem);
+}
+
+h2{
+    /* border: 1px solid red; */
+    color: #824936;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.designs-section h2 {
+    margin-bottom: 1em;
+}
+
+.split-wrapper h2{
+    color: #fff;
+}
+
+.subheading{
+    color:#824936;
+    letter-spacing: .15cm;
+}
+
+/* Img */
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Layouts */
+.container{
+    border: 1px solid black;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+
+.hero-content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue; */
+    min-height: 400px;
+    background-color: #f3eed9;
+}
+
+/* Design Section */
+.split-wrapper{
+    padding: 2em 4em;
+}
+
+.designs-section .container{
+    padding: 4em;
+}
+
+.container .columns-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info{
+    width: 45%;
+    /* border: 1px solid red; */
+}
+
+/* Dark green background */
+.split-wrapper{
+    /* border: 1px solid blue; */
+    color: #fff;
+    background-color: #222c2a;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-wrapper{
+    width: 45%;
+}
