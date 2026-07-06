@@ -60,7 +60,6 @@ header {
     background: #136c72;
     padding: 1em 0;
     text-align: center;
-    border: 1px solid black;
 }
 
 .nav {
@@ -69,10 +68,27 @@ header {
 
 .nav__list
 {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    padding: 1em 1em 0;
 }
 
+.nav__item{
+    margin-bottom: 1em;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav__link--button{
+    padding: .25em .5em;
+    border-radius: 100px;
+    color: #000;
+    background-color: #fff;
+}
 
 .nav-toggle {
     cursor: pointer;
@@ -87,17 +103,6 @@ header {
     
     position: absolute;
     left: 0;
-}
-
-.nav__item{
-    margin-bottom: 2em;
-}
-
-.nav__link{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 .nav-toggle:focus,
@@ -203,21 +208,19 @@ header {
 
     .nav__list{
         display: flex;
-        align-items: center;
+        align-items: end;
         /* border: 1px solid yellow; */
-        padding: 0;
-        margin: 0;
     }
 
     .nav__item{
         /* border: 1px solid blue; */
-        margin-left: 2.5em;
+        margin-left: .75em;
     }
 
-    .nav__link{
-        margin: 0;
-        padding: 0;
+    .nav__list--primary{
+        margin: 0 auto;
     }
+
 
     .row {
         display: flex;
