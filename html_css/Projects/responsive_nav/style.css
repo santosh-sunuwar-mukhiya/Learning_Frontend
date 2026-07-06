@@ -65,13 +65,11 @@ header {
 
 .nav {
     width: 100%;
-    border: 1px solid yellow;
 }
 
 .nav__list
 {
     list-style-type: none;
-    border: 1px solid red;
     padding: 1em 1em 0;
 }
 
@@ -96,7 +94,6 @@ header {
 }
 
 .nav__link{
-    border: 1px solid blue;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -198,12 +195,28 @@ header {
     .nav {
         visibility: visible;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         height: auto;
+        /* border: 1px solid red; */
+        margin-left: 3em;
     }
 
     .nav__list{
         display: flex;
+        align-items: center;
+        /* border: 1px solid yellow; */
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav__item{
+        /* border: 1px solid blue; */
+        margin-left: 2.5em;
+    }
+
+    .nav__link{
+        margin: 0;
+        padding: 0;
     }
 
     .row {
