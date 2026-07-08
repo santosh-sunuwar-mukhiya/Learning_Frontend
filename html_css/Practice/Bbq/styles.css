@@ -1,103 +1,175 @@
-*, *:before, *:after{
-    margin: 0;
-    padding: 0;
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
     box-sizing: border-box;
 }
 
-/* Typography */
-strong{
-    font-weight: 900;
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
 }
+
+
+/* =================
+   Typography 
+   ================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #F18119;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    color: #F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+strong { font-weight: 900; }
+
+
+/* =================
+   Intro section 
+   ================= */
+   
+.intro {
+    background-image: url(images/dark-ribs.jpg);
+    background-size: cover;
+    background-color: #404040;
+    background-position: center;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+/* =================
+   main-content section 
+   ================= */
 
 .container{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100%;
+}
+.main-content {
+    padding: 2em 1em;
 }
 
-.intro{
-    color: #ffffff;
-    background-image: url("./bbq.jpg");
-    background-size: cover;
-    background-position: center;
+
+
+.intro > *,
+.main-content > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =================
+   form
+   ================= */
+   
+.email-collector {
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.btn {
     width: 100%;
-    height: 50%;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.form{
-    text-align: center;
-    padding: 1rem 2rem 0;
-}
-
-.desc{
-    line-height: 1.2em;
-    margin: .5em 0;
-}
-
-input{
-    outline: none;
-    border:1px solid turquoise;
-    width: 100%;
-    padding: .5rem;
     border-radius: 5px;
-    text-align: center;
-    margin-bottom: .5em;
 }
 
-input:focus{
-    border: 1px solid black;
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .25em;
+    border: 1px solid #404040;
 }
 
-input:hover{
-    background-color: turquoise;
-}
-
-button{
-    width: 100%;
-    padding: 1em 0;
-    text-align: center;
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
     text-transform: uppercase;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    font-weight: 700;
-    color: whitesmoke;
-    background-color: orangered;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
     cursor: pointer;
 }
 
-.foot{
-    font-size: 0.847rem;
-    margin-top: 0.85em;
-    font-weight: 700;
+.btn-primary {
+    background: linear-gradient(to left, #ff713b, #ffa51d);
+    color: white;
 }
 
-.sub-heading{
-    text-transform: uppercase;
-    font-size: 0.75rem;
-}
+/* =================
+   media queries 
+   ================= */
+   
+@media (min-width: 600px) {
+    body {
+        font-size: 1.125rem;
+    }
 
-/* Media Queries */
-@media(min-width:768px){
     .container{
         flex-direction: row;
     }
-
-    .intro{
-        height:100%;
+    
+    h1 {
+        font-size: 3.5rem;
     }
-
-    .form{
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+    
+    .main-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
     }
 }
-
