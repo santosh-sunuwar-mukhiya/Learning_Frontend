@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ne-NP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram-Chandra Sun Chandi Pasal | Premium Jewelry in Nepal</title>
+    <meta name="description" content="Discover exquisite gold, silver, and diamond jewelry at Ram-Chandra Sun Chandi Pasal. Handcrafted traditional and modern Nepali designs with certified purity.">
+    <meta name="keywords" content="Sun Chandi Pasal, Gold Shop Nepal, Nepali Jewelry, Ram Chandra Gold, Kathmandu Jewelry">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Inline Styles for Quick Presentation -->
+    <style>
+        /* --- RESET & VARIABLES --- */
+        :root {
+            --primary: #B38F43; /* Elegant Gold */
+            --primary-hover: #967533;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9f6f0;
+            --text-main: #222222;
+            --text-muted: #666666;
+            --border-color: #e5e5e5;
+            --transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #121212;
+            --bg-secondary: #1a1a1a;
+            --text-main: #f5f5f5;
+            --text-muted: #b0b0b0;
+            --border-color: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 0.5rem auto 0;
+        }
+
+        /* --- NAVBAR & HAMBURGER --- */
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            height: 70px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            flex-direction: column;
+            background-color: var(--bg-secondary);
+            width: 100%;
+            text-align: center;
+            transition: 0.4s ease;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+            padding: 2rem 0;
+            gap: 1.5rem;
+            display: flex;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-link {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: var(--transition);
+            background-color: var(--text-main);
+        }
+
+        /* Hamburger Animation */
+        .hamburger.active .bar:nth-child(2) { opacity: 0; }
+        .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--text-main);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 1rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #e0e0e0;
+        }
+
+        /* --- GRID & CARDS (COLLECTIONS) --- */
+        .collections {
+            background-color: var(--bg-secondary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-primary);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        /* --- PRICING (DAILY RATE) --- */
+        .rates-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .rates-table th, .rates-table td {
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .rates-table th {
+            background-color: var(--bg-secondary);
+            color: var(--primary);
+        }
+
+        /* --- TESTIMONIALS --- */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            padding: 2rem;
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* --- FAQ (ACCORDION) --- */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            color: var(--text-muted);
+            margin-top: 0;
+        }
+
+        .faq-answer.open {
+            max-height: 200px;
+            margin-top: 0.5rem;
+        }
+
+        /* --- CONTACT FORM --- */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            background-color: #111;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo {
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* --- KEYFRAME ANIMATIONS --- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10deg); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- RESPONSIVE MEDIA QUERIES --- */
+        
+        /* Tablets (min-width: 768px) */
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-content h1 {
+                font-size: 3.5rem;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+                text-align: left;
+            }
+        }
+
+        /* Desktops (min-width: 1024px) */
+        @media (min-width: 1024px) {
+            .hamburger {
+                display: none;
+            }
+            .nav-menu {
+                position: static;
+                flex-direction: row;
+                background: none;
+                box-shadow: none;
+                width: auto;
+                padding: 0;
+                gap: 2rem;
+            }
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .hero {
+                height: 85vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#" class="logo">RAM-CHANDRA</a>
+            
+            <div class="nav-controls">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <li><a href="#rates" class="nav-link">Daily Rates</a></li>
+                    <li><a href="#faq" class="nav-link">FAQs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                
+                <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Pure Gold. Timeless Traditions.</h1>
+            <p>Crafting generations of trust and heritage with authentic hallmark gold and silver.</p>
+            <a href="#collections" class="btn">Explore Collections</a>
+        </div>
+    </section>
+
+    <!-- CARDS / GRID SECTION -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <h2 class="section-title">Our Featured Collections</h2>
+            <div class="grid">
+                <!-- Card 1 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=400&q=80" alt="Bridal Gold Necklace Set" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Bridal Masterpieces</h3>
+                        <p class="text-muted">Intricate, traditional 24K gold designs curated perfectly for classic Nepali weddings.</p>
+                    </div>
+                </article>
+                <!-- Card 2 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80" alt="Elegant Diamond Rings" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Modern Diamond Bands</h3>
+                        <p class="text-muted">Minimalist, premium diamond and white gold choices tailored for contemporary styles.</p>
+                    </div>
+                </article>
+                <!-- Card 3 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80" alt="Custom Silver Ornaments" class="card-img" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Pure Silver Artifacts</h3>
+                        <p class="text-muted">Finest quality sterling silver utensils, statues, and daily wearable configurations.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING / RATES MODULE -->
+    <section class="rates" id="rates">
+        <div class="container">
+            <h2 class="section-title">Today's Market Rates</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">As per Federation of Nepal Gold and Silver Dealers' Association</p>
+            <table class="rates-table">
+                <thead>
+                    <tr>
+                        <th>Material Type</th>
+                        <th>Rate per Tola</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fine Gold (Chhapawal)</td>
+                        <td>Rs. 142,000</td>
+                    </tr>
+                    <tr>
+                        <td>Tejabi Gold</td>
+                        <td>Rs. 141,300</td>
+                    </tr>
+                    <tr>
+                        <td>Pure Silver</td>
+                        <td>Rs. 1,800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"The best customer service in town. They explained the purity metrics clearly, and the custom bridal work matched exactly what we wanted."</p>
+                    <strong style="display:block; margin-top:1rem; color:var(--primary);">- Aarav Sharma, Kathmandu</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Trusted name for hallmark gold. I have been buying from Ram-Chandra Sun Chandi Pasal for years. Absolute reliability."</p>
+                    <strong style="display:block; margin-top:1rem; color:var(--primary);">- Maya Shrestha, Lalitpur</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">Are all your gold ornaments certified? <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, all our jewelry goes through stringent laboratory checks and comes with official hallmark certification confirming its exact purity metrics.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer custom design processing? <span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Absolutely. You can bring your own references or sketches, and our local artisans will map out custom designs in gold or silver within 7-14 working days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & CTA -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Book a Consultation</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="98XXXXXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Interested In</label>
+                    <select id="interest" class="form-control">
+                        <option>Bridal Collection</option>
+                        <option>Daily Wear Gold</option>
+                        <option>Silver Ornaments</option>
+                        <option>Custom Request</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" style="align-self: flex-start; margin-top: 1rem;">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container" style="padding: 0;">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">RAM-CHANDRA</div>
+                    <p style="color: #bbb;">Your trusted partner for certified gold and custom silver crafts across generations in Nepal.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links" style="margin-top: 1rem;">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#rates">Daily Rates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Our Showroom</h3>
+                    <p style="color: #bbb; margin-top: 1rem;">Main Road, Ward No. 2<br>Ilam, Nepal</p>
+                    <p style="color: #bbb; margin-top: 0.5rem;">Phone: +977-27-XXXXXX</p>
+                </div>
+            </div>
+            <hr style="border-color: #333; margin-bottom: 1.5rem;">
+            <p style="color: #777; font-size: 0.9rem;">&copy; 2026 Ram-Chandra Sun Chandi Pasal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR INTERACTIVE MODULES -->
+    <script>
+        // --- MOBILE HAMBURGER MENU INTERACTION ---
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }));
+
+        // --- DARK MODE TOGGLE TOGGLE ENGINE ---
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                themeToggle.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = '☀️';
+            }
+        });
+
+        // --- FAQ ACCORDION LOGIC ---
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.classList.contains('open');
+                
+                // Close all open answers first
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('open');
+                    ans.style.maxHeight = null;
+                });
+                document.querySelectorAll('.faq-question span').forEach(span => span.textContent = '+');
+
+                if (!isOpen) {
+                    answer.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    question.querySelector('span').textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

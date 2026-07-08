@@ -36,6 +36,23 @@ ul a{
 .footer-title
 {
     font-size: clamp(1rem, 5vw, 3rem);
+    margin-bottom: .5em;
+}
+
+.about h4{
+    margin-bottom: .5em;
+}
+
+.links h4{
+    margin: .5em 0;
+}
+
+.links a{
+    color: #A59678;
+}
+
+.links a:hover{
+    color: red;
 }
 
 /* Image */
@@ -122,3 +139,27 @@ footer{
     color: #fff;
     background-color: #2E323F;
 }
+
+.about {
+    margin-bottom: .5em;
+    border: 1px solid red;
+}
+
+.links{
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+@media(min-width: 630px){
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2em 0;
+    }
+
+    .link{
+        border: 1px solid blue;
+        padding: 1em;
+    }
+}
+
