@@ -37,6 +37,9 @@ ul a{
 {
     font-size: clamp(1rem, 5vw, 3rem);
     margin-bottom: .5em;
+    color: #fff;
+    /* border: 1px solid blue; */
+    text-align: center;
 }
 
 .about h4{
@@ -48,11 +51,15 @@ ul a{
 }
 
 .links a{
-    color: #A59678;
+    color: #6F737F;
 }
 
 .links a:hover{
     color: red;
+}
+
+h4{
+    color: #A59678;
 }
 
 /* Image */
@@ -63,17 +70,14 @@ img{
 /* Layout */
 /* navigation bar */
 header{
-    /* border: 1px solid yellow; */
     background-color: #2e323f;
     padding: 1em 0;
 }
 
-.nav{
-    /* border: 1px solid red; */
+.nav
+{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: auto;
     margin: 0 auto;
     padding: 1em;
 }
@@ -88,7 +92,7 @@ header{
 }
 
 .nav__link{
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-size: clamp(0.75rem, 1vw, 1rem);
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
@@ -99,6 +103,8 @@ header{
     padding: .5em .75em;
     border-radius: 100px;
 }
+
+
 /* container */
 .row{
     display: flex;
@@ -109,14 +115,14 @@ header{
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 1em;
 }
 
 /* Main */
 main
 {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin: .5em 0;
 }
 
@@ -136,21 +142,20 @@ main
 
 /* footer */
 footer{
-    color: #fff;
+    color: #6F737F;
     background-color: #2E323F;
 }
 
 .about {
     margin-bottom: .5em;
-    border: 1px solid red;
 }
 
 .links{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     text-align: center;
 }
 
-@media(min-width: 630px){
+@media (min-width: 630px){
     .links{
         display: flex;
         justify-content: space-evenly;
@@ -158,8 +163,68 @@ footer{
     }
 
     .link{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         padding: 1em;
     }
+
+    .nav{
+        width: 100%;
+        /* border: 1px solid blue; */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__list{
+        /* border: 1px solid red; */
+        display: flex;
+    }
+
+    .nav__item{
+        margin-left: .5em;
+    }
+
+    /* switch spacing from vertical to horizontal on desktop */
+    .nav__list{
+        margin-bottom: 0;
+    }
+
+    .nav__list:not(:last-child){
+        margin-right: 2em;
+    }
 }
+
+@media (min-width: 900px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .article{
+        width: 62%;
+        /* border: 1px solid red; */
+    }
+
+    .cards{
+        width: 32%;
+        /* border: 1px solid blue; */
+    }
+
+    /* footer */
+
+    .about{
+        width: 40%;
+        /* border: 1px solid red; */
+    }
+
+    .links{
+        width: 50%;
+        /* border: 1px solid yellow; */
+    }
+
+    /* .link{
+        border: 1px solid yellow;
+    }
+} */
 
